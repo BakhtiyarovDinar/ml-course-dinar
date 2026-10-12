@@ -21,18 +21,19 @@
 
 ## 📁 Структура модуля
 
-```text
-module-1-titanic/
-├── README.md           # этот файл
-├── notebook.ipynb      # полный отчёт: 16 разделов
-├── requirements.txt    # зависимости
-├── data/
-│   ├── train.csv       # обучающая выборка
-│   └── test.csv        # тестовая выборка
-├── models/             # сохранённые модели и метаданные (.pkl, .json)
-└── examples/           # PNG-визуализации (графики EDA, ROC, матрицы ошибок)
+    module-1-titanic/
+    ├── README.md           # этот файл
+    ├── notebook.ipynb      # полный отчёт: 16 разделов
+    ├── requirements.txt    # зависимости
+    ├── data/
+    │   ├── train.csv       # обучающая выборка
+    │   └── test.csv        # тестовая выборка
+    ├── models/             # сохранённые модели и метаданные (.pkl, .json)
+    └── examples/           # PNG-визуализации (графики EDA, ROC, матрицы ошибок)
 
-## Быстрый старт
+## 🚀 Быстрый старт
+
+Пример загрузки обученной модели и метрик прямо из репозитория на Python:
 
 ```python
 import joblib
@@ -46,4 +47,3 @@ scaler = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/scaler.pkl").conte
 metrics = requests.get(f"{BASE_URL}/models/metrics.json").json()
 
 print("Метрики сохраненных моделей загружены успешно!")
-
