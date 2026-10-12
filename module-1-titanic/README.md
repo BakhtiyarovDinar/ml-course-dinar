@@ -32,3 +32,18 @@ module-1-titanic/
 ├── models/             # сохранённые модели и метаданные (.pkl, .json)
 └── examples/           # PNG-визуализации (графики EDA, ROC, матрицы ошибок)
 
+## Быстрый старт
+
+```python
+import joblib
+import requests
+from io import BytesIO
+
+BASE_URL = "https://raw.githubusercontent.com/BakhtiyarovDinar/ml-course-dinar/main/module-1-titanic"
+
+model = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/lr_model.pkl").content))
+scaler = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/scaler.pkl").content))
+metrics = requests.get(f"{BASE_URL}/models/metrics.json").json()
+
+print("Метрики сохраненных моделей загружены успешно!")
+
