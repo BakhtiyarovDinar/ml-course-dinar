@@ -1,0 +1,13 @@
+{
+  "best_model": "LightGBM (Optuna)",
+  "best_roc_auc": 0.8430920457774678,
+  "best_params": {
+    "n_estimators": 100,
+    "num_leaves": 24,
+    "max_depth": 4,
+    "learning_rate": 0.03608944662620763,
+    "min_child_samples": 43,
+    "subsample": 0.7984288410297223,
+    "colsample_bytree": 0.9949740816433382
+  }
+}
