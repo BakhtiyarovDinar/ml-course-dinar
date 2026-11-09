@@ -1,0 +1,18 @@
+[
+  "Administrative",
+  "Administrative_Duration",
+  "Informational",
+  "Informational_Duration",
+  "ProductRelated",
+  "ProductRelated_Duration",
+  "BounceRates",
+  "ExitRates",
+  "PageValues",
+  "SpecialDay",
+  "TotalPages",
+  "TotalDuration",
+  "AvgPageValue",
+  "BounceExitRatio",
+  "IsNewVisitor",
+  "MonthNum"
+]
